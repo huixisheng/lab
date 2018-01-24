@@ -1,0 +1,25 @@
+{
+  "name": "lab",
+  "version": "0.0.1",
+  "description": "coding lab",
+  "main": "index.js",
+  "scripts": {
+    "subtree:update": "git subtree pull --prefix=weex/weex-vue-render weex-vue-render master --squash"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huixisheng/lab.git"
+  },
+  "keywords": [
+    "Vue",
+    "Weex",
+    "Webpack",
+    "mocha"
+  ],
+  "author": "huixisheng@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huixisheng/lab/issues"
+  },
+  "homepage": "https://github.com/huixisheng/lab#readme"
+}
