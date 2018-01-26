@@ -7,3 +7,8 @@
 
 类试的扩展
 - https://www.npmjs.com/package/include-html-loader
+
+## webpack-demos ##
+> 根据ruanyf/webpack-demos支持webpack3
+
+- https://github.com/huixisheng/webpack-demos

@@ -1,0 +1,14 @@
+{
+  "name": "webpack-demos",
+  "version": "1.0.0",
+  "description": "some demos for webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "huixisheng@gmail.com",
+  "license": "MIT"
+}
