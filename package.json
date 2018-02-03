@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/huixisheng/lab/issues"
   },
-  "homepage": "https://github.com/huixisheng/lab#readme"
+  "homepage": "https://github.com/huixisheng/lab#readme",
+  "dependencies": {
+    "@vue/cli": "^3.0.0-alpha.7"
+  }
 }
