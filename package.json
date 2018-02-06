@@ -4,7 +4,8 @@
   "description": "coding lab",
   "main": "index.js",
   "scripts": {
-    "subtree:update": "git subtree pull --prefix=weex/weex-vue-render weex-vue-render master --squash"
+    "subtree:update": "git subtree pull --prefix=weex/weex-vue-render weex-vue-render master --squash",
+    "server:anywhere": "anywhere -d ./ -p 9090"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,8 @@
   "homepage": "https://github.com/huixisheng/lab#readme",
   "dependencies": {
     "@vue/cli": "^3.0.0-alpha.7"
+  },
+  "devDependencies": {
+    "anywhere": "^1.4.0"
   }
 }

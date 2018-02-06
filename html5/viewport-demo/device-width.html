@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>viewport测试</title>
+  <meta name="viewport" content="width=device-width"/>
+</head>
+<body>
+<div id="content"></div>
+<script type="text/javascript">
+function ready(callback) {
+  // addEventListener
+  document.addEventListener('DOMContentLoaded', function() {
+    typeof callback === 'function' && callback();
+  });
+}
+
+ready(function() {
+  var win = window;
+  var doc = document;
+  var docEl = doc.documentElement;
+  var rect = docEl.getBoundingClientRect();
+  var devicePixelRatio = win.devicePixelRatio;
+  var content = 'devicePixelRatio: ' + devicePixelRatio;
+  content += '<br/>clientWidth: ' + rect.width;
+  doc.getElementById('content').innerHTML = content;
+});
+
+</script>
+</body>
+</html>
