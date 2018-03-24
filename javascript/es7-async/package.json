@@ -1,0 +1,16 @@
+{
+  "name": "es7-async",
+  "version": "1.0.0",
+  "description": "demo for async await",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "async",
+    "await",
+    "es7"
+  ],
+  "author": "huixisheng@gmail.com",
+  "license": "MIT"
+}
