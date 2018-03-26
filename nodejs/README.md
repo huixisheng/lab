@@ -10,4 +10,14 @@ scp /Users/huixisheng/webpack-mhome.json ykq@xxx.com:/home/xx/Assets
 - http://blog.csdn.net/catoop/article/details/40651947
 - http://blog.csdn.net/yuyongpeng/article/details/1818717
 
+
+## babel-preset-env ##
+[文档](https://babeljs.cn/docs/plugins/preset-env/)
+
+
 输入命令 `ctrl+r`搜索历史命令
+
+## 记录 ##
+- nodemon
+- babel-register
+- es-checker

@@ -1,0 +1,21 @@
+{
+  "name": "demo-for-preset-env",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:module": "babel module --out-dir dist/module",
+    "build:array": "babel array --out-dir dist/array",
+    "run:array": " babel-node array/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "babel",
+    "env"
+  ],
+  "author": "huixisheng@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1"
+  }
+}
