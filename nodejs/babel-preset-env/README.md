@@ -7,6 +7,7 @@ $ babel class.js  -o dist/class.js
 ## 文档 ##
 - https://kangax.github.io/compat-table/es6/
 - https://node.green/
+- https://tc39.github.io/ecma262/
 
 
 ```

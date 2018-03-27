@@ -42,6 +42,7 @@ await Promise.all(promises);
 ### 相关扩展阅读文章 ###
 - https://hackernoon.com/6-reasons-why-javascripts-async-await-blows-promises-away-tutorial-c7ec10518dd9  https://segmentfault.com/a/1190000009070711  https://blog.fundebug.com/2017/04/04/nodejs-async-await/
 - [体验异步的终极解决方案-ES7的Async/Await](https://cnodejs.org/topic/5640b80d3a6aa72c5e0030b6)
+- [异步函数 - 提高 Promise 的易用性](https://developers.google.com/web/fundamentals/primers/async-functions?hl=zh-cn)
 
 ## TODO ##
 - [ ] `sudo npm i vue-qrious -S` 报错
