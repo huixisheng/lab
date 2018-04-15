@@ -1,0 +1,15 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "current"
+      },
+      "modules": "umd",
+      "include": [],
+      "debug": true
+    }]
+  ],
+  "plugins": [
+    "transform-array-find"
+  ]
+}

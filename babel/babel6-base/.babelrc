@@ -1,0 +1,31 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": [
+          "Android >= 4.0",
+          "ios >= 6",
+          "ie >= 10",
+          "Edge >= 10",
+          "Firefox >= 20",
+          "Safari >= 6",
+          "Chrome >= 12",
+          "ChromeAndroid >= 4.0",
+          "QQAndroid >= 1.2"
+        ]
+      },
+      "modules": "umd",
+      "useBuiltIns": "entry",
+      // "useBuiltIns": true,
+      "include": [
+        "es6.array.of",
+        // "es6.object.assign",
+        "es6.array.find",
+        "es6.array.find-index"
+        // "transform-es2015-shorthand-properties"
+      ],
+      "debug": true
+    }]
+  ],
+  // "plugins": ["transform-runtime"]
+}
