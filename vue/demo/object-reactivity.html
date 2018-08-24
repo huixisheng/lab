@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>用于测试Vue对Object的响应</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="app">
+    <div>{{data1 }}</div>
+    <div>
+      <list-address :item="data1.address"></list-address>
+    </div>
+    <button @click="handleData1Change">数据修改</button>
+  </div>
+
+  <script>
+    const data1Changed = {
+      name: 'ykq',
+      qq: 15,
+      address: {
+        city: 'longquan',
+        province: 'zhejiang'
+      }
+    }
+    Vue.component('list-address', {
+      props: {
+        item: {
+          type: Object,
+          required: true
+        }
+      },
+      template: '<div>{{item}}</div>'
+    });
+    var app = new Vue({
+      el: '#app',
+      component: {
+        // address,
+      },
+      data: {
+        data1: {
+          name: 'huixisheng',
+          qq: 469184346,
+          address: {
+            city: 'hangzhuo',
+            province: 'zhejiang'
+          }
+        }
+      },
+      methods: {
+        handleData1Change() {
+          this.data1 = Object.assign(this.data1, data1Changed)
+        }
+      },
+      mounted() {
+
+      }
+    })
+  </script>
+</body>
+</html>
