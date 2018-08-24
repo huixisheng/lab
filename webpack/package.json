@@ -10,5 +10,8 @@
     "webpack"
   ],
   "author": "huixisheng@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@webpack-cli/init": "^0.1.0"
+  }
 }
