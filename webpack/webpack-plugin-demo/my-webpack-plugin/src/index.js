@@ -65,8 +65,7 @@ MyWebpackPlugin.prototype.apply = function(compiler) {
     console.log('compiler.hooks.environment.tap environment. environment 准备好之后，执行插件。');
   });
 
-  compiler.hooks.afterEnvironment.tap(pluginName, (compilation) => {
-    // console.dir(compilation);
+  compiler.hooks.afterEnvironment.tap(pluginName, () => {
     console.log('compiler.hooks.afterEnvironment.tap afterEnvironment. environment 安装完成之后，执行插件。');
   });
 
@@ -131,6 +130,7 @@ MyWebpackPlugin.prototype.apply = function(compiler) {
   });
 
   compiler.hooks.compilation.tap(pluginName, (compilation) => {
+    fs.writeFileSync(path.join(__dirname, '../../compiler.hooks.compilation.tap.compilation.md'), JSON.stringify(compilation, null, 2));
     // console.dir(compilationParams);
     console.log('compiler.hooks.compilation.tap compilation. 编译(compilation)创建之后，执行插件。');
   });
@@ -206,9 +206,9 @@ MyWebpackPlugin.prototype.apply = function(compiler) {
 	// });
 
   compiler.hooks.emit.tapAsync('FileListPlugin', (compilation, callback) => {
-    // console.dir(compilation);
+    // console.dir(compilation); 见console.dir.compilation.md
     // fs.writeFileSync(path.join(__dirname, '../../compilation.assets.md'), JSON.stringify(compilation, getCircularReplacer, 2));
-    fs.writeFileSync(path.join(__dirname, '../../compilation.assets.md'), CircularJSON.stringify(compilation, null, 2));
+    fs.writeFileSync(path.join(__dirname, '../../compiler.hooks.emit.tapAsync.compilation.md'), CircularJSON.stringify(compilation, null, 2));
 
     /**
      TypeError: Converting circular structure to JSON
