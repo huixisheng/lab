@@ -1,0 +1,28 @@
+{
+  "name": "mobile-debug-webpack-plugin",
+  "version": "0.0.1",
+  "description": "some mobile debug for webpack plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack",
+    "plugin"
+  ],
+  "author": "huixisheng",
+  "license": "MIT",
+  "dependencies": {
+    "@tswjs/tsw": "^1.2.2",
+    "alloylever": "^1.0.4",
+    "eruda": "^1.5.1",
+    "livepool": "^0.7.9",
+    "spy-debugger": "^3.7.2",
+    "vconsole": "^3.2.0",
+    "weinre": "^2.0.0-pre-I0Z7U9OV",
+    "whistle": "^1.12.2"
+  },
+  "devDependencies": {
+    "vorlon": "^0.5.5"
+  }
+}
