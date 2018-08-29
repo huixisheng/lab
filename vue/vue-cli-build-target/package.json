@@ -1,0 +1,55 @@
+{
+  "name": "vue-cli-build-target",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build:js:shadow-mode": "VUE_CLI_CSS_SHADOW_MODE=true ./node_modules/.bin/vue-cli-service build index.js --target=lib --dest=dist/build-js-shadow-mode --name=vueCliBuildTarget",
+    "build:vue:shadow-mode": "VUE_CLI_CSS_SHADOW_MODE=true ./node_modules/.bin/vue-cli-service build src/App.vue --target=lib --dest=dist/build-vue-shadow-mode --name=vueCliBuildTarget",
+    "build:js:nocss": "./node_modules/.bin/vue-cli-service build index.js --target=lib --dest=dist/nocss-build-js --name=vueCliBuildTarget",
+    "build:vue:nocss": "./node_modules/.bin/vue-cli-service build src/App.vue --target=lib --dest=dist/nocss-build-vue --name=vueCliBuildTarget",
+    "build:js": "./node_modules/.bin/vue-cli-service build index.js --target=lib --dest=dist/build-js --name=vueCliBuildTarget",
+    "build:vue": "./node_modules/.bin/vue-cli-service build src/App.vue --target=lib --dest=dist/build-vue --name=vueCliBuildTarget",
+    "build": "npm run build:js && npm run build:vue",
+    "build:shadow-mode": "npm run build:js:shadow-mode && npm run build:vue:shadow-mode",
+    "build:nocss": "npm run build:js:nocss && npm run build:vue:nocss",
+    "serve": "./node_modules/.bin/vue-cli-service serve src/entry.js --open --copy",
+    "lint": "./node_modules/.bin/vue-cli-service lint"
+  },
+  "dependencies": {
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-eslint": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "Android >= 4.0",
+    "ios >= 6",
+    "Edge >= 10",
+    "Firefox >= 20",
+    "Safari >= 6",
+    "Chrome >= 12",
+    "ChromeAndroid >= 4.0"
+  ]
+}
