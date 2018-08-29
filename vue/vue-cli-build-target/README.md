@@ -1,8 +1,30 @@
 # vue-cli-build-target
 
-## 相关issue ##
 
-配置了`vue.config.js`.
+common config
+```
+  "browserslist": [
+    "Android >= 4.0",
+    "ios >= 6",
+    "Edge >= 10",
+    "Firefox >= 20",
+    "Safari >= 6",
+    "Chrome >= 12",
+    "ChromeAndroid >= 4.0"
+  ]
+```
+
+set `vue.config.js` `css.extract = false`
+dist/nocss-build-js, dist/nocss-build-vue
+
+
+set `vue.config.js` `css.extract = true`
+dist/build-js, dist/build-vue
+
+## problem
+
+`vue.config.js`.
+
 ```
 module.exports = {
   // https://webpack.docschina.org/configuration/output/
@@ -31,11 +53,14 @@ module.exports = {
 };
 ```
 
-执行
+exec
+
 ```
 "build": "./node_modules/.bin/vue-cli-service build index.js --target=lib",
 "build:vue": "./node_modules/.bin/vue-cli-service build src/App.vue --target=lib",
 ```
+
+Not in line with my expectations.
 跟我想的预期不一致.
 
 - [Can the build target set the library name and file name separately? #1973](https://github.com/vuejs/vue-cli/issues/1973)
