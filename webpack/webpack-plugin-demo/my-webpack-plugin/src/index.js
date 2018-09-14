@@ -31,6 +31,7 @@ MyWebpackPlugin.prototype.apply = function(compiler) {
   // compilation 钩子 https://webpack.docschina.org/api/compilation-hooks/
   // Plugin API https://webpack.docschina.org/api/plugins/#tapable
   fs.writeFileSync(path.join(__dirname, '../../compiler.md'), JSON.stringify(compiler, null, 2));
+  fs.writeFileSync(path.join(__dirname, '../../compiler-hooks.md'), JSON.stringify(compiler.hooks, null, 2));
   fs.writeFileSync(path.join(__dirname, '../../compilation.md'), JSON.stringify(compiler.hooks.compilation, null, 2));
 
   console.log('compiler生命周期');
