@@ -1,0 +1,29 @@
+{
+  "name": "demo-block-block",
+  "version": "1.0.0",
+  "description": "demo block",
+  "author": "huixisheng <469184346@qq.com>",
+  "files": [
+    "src/",
+    "lib/"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "ice",
+    "vue",
+    "block"
+  ],
+  "dependencies": {
+    "@vue-materials/basic-container": "^1.0.0",
+    "vue": "^2.5.16"
+  },
+  "blockConfig": {
+    "name": "demo-block",
+    "title": "demo block",
+    "categories": [
+      "表单",
+      "列表"
+    ],
+    "screenshot": ""
+  }
+}
