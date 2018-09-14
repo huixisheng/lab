@@ -74,3 +74,6 @@ css.extract= false. build autoprefixer 无效
 - https://github.com/vuejs/vue-cli/issues/2303
 - https://github.com/vuejs/vue-cli/issues/852
 - https://github.com/vuejs/vue-cli/issues/350
+
+- [vue cli 3.x ， import postcss-pxtorem , not work (第三方postcss 插件不配置生效) #2303](https://github.com/vuejs/vue-cli/issues/2303)
+- https://github.com/vuejs/vue-cli/issues/852
