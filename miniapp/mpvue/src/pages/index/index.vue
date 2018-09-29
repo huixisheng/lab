@@ -13,12 +13,12 @@
         <card :text="motto"></card>
       </div>
     </div>
-      
+
     <form class="form-container">
       <input type="text" class="form-control" v-model="motto" placeholder="v-model" />
       <input type="text" class="form-control" v-model.lazy="motto" placeholder="v-model.lazy" />
     </form>
-
+    <a href="/pages/counter/main" class="counter">去往Vuex示例页面</a>
   </div>
 </template>
 
@@ -39,7 +39,7 @@ export default {
 
   methods: {
     bindViewTap() {
-      const url = '../logs/logs';
+      const url = '../logs/main';
       wx.navigateTo({ url });
     },
     getUserInfo() {
@@ -93,5 +93,13 @@ export default {
   padding: 0 12px;
   margin-bottom: 5px;
   border: 1px solid #ccc;
+}
+
+.counter {
+  display: inline-block;
+  margin: 10px auto;
+  padding: 5px 10px;
+  color: blue;
+  border: 1px solid blue;
 }
 </style>

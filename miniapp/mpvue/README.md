@@ -1,6 +1,6 @@
-# mpvue
+# mpvue-demo
 
-> lab for mpvue
+> demo for mpvue
 
 ## Build Setup
 
