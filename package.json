@@ -24,9 +24,9 @@
   },
   "homepage": "https://github.com/huixisheng/lab#readme",
   "dependencies": {
-    "@vue/cli": "^3.0.0-alpha.7"
+    "@vue/cli": "^3.0.4"
   },
   "devDependencies": {
-    "anywhere": "^1.4.0"
+    "anywhere": "^1.5.0"
   }
 }
