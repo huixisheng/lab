@@ -21,3 +21,7 @@ scp /Users/huixisheng/webpack-mhome.json ykq@xxx.com:/home/xx/Assets
 - nodemon
 - babel-register
 - es-checker
+
+## 微信爬虫
+- https://github.com/lqqyt2423/wechat_spider
+- https://www.v2ex.com/t/352758
