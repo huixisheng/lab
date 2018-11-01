@@ -1,0 +1,39 @@
+<template>
+<view>
+  <Counter></Counter>
+</view>
+</template>
+
+<script>
+import wepy from 'wepy'
+
+export default class extends wepy.component {
+  config = {
+    usingComponents: {
+      Counter: '../components/counter.wpy',
+    }
+  }
+
+  data = {
+    mynum: 20
+  }
+
+  props = {
+
+  }
+
+  computed = {
+
+  }
+
+  data = {}
+
+  methods = {
+
+  }
+}
+</script>
+
+<style lang="less">
+
+</style>
