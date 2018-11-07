@@ -1,0 +1,55 @@
+<template>
+<view>
+  <iButton type="primary">iview-weapp 按钮</iButton>
+  <i-tabs current="{{ current }}" bindchange="handleChange">
+    <i-tab key="tab1" title="选项1"></i-tab>
+    <i-tab key="tab2" title="选项2"></i-tab>
+    <i-tab key="tab3" title="选项3"></i-tab>
+  </i-tabs>
+</view>
+</template>
+
+<script>
+import wepy from '@wepy/core';
+
+wepy.page ({
+
+  computed: {
+
+  },
+
+  data: {
+    current: 1,
+  },
+
+  onShow() {
+
+  },
+
+  components: {
+
+  },
+
+  methods: {
+    handleChange() {
+      wx.showToast({
+        title: 'tab change',
+      });
+    },
+  },
+});
+</script>
+
+<config>
+{
+  usingComponents: {
+    iButton: 'module:iview-weapp/dist/button/index',
+    "i-tabs": "module:iview-weapp/dist/tabs/index",
+    "i-tab": "module:iview-weapp/dist/tab/index"
+  },
+  navigationBarTitleText: 'vant-weapp demo',
+}
+</config>
+
+<style lang="less">
+</style>

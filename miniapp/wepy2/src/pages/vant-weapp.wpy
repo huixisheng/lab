@@ -1,0 +1,65 @@
+<template>
+<view>
+   <van-popup show="{{ show }}" bind:close="onClose">内容</van-popup>
+   <van-badge title="标签名称"></van-badge>
+  <van-tabs active="{{ active }}" bind:change="onChange">
+    <van-tab title="标签 1">内容 1</van-tab>
+    <van-tab title="标签 2">内容 2</van-tab>
+    <van-tab title="标签 3">内容 3</van-tab>
+    <van-tab title="标签 4">内容 4</van-tab>
+  </van-tabs>
+</view>
+</template>
+
+<script>
+import wepy from '@wepy/core';
+
+wepy.page ({
+
+  computed: {
+
+  },
+
+  data: {
+    show: true,
+    active: 1,
+
+  },
+
+  onShow() {
+
+  },
+
+  components: {
+
+  },
+
+  methods: {
+    onClose() {
+      wx.showToast({
+        title: '点击了关闭',
+      });
+    },
+    onChange() {
+      wx.showToast({
+        title: 'tab change',
+      });
+    },
+  },
+});
+</script>
+
+<config>
+{
+  usingComponents: {
+    'van-tab': 'module:vant-weapp/dist/tab/index',
+    'van-tabs': 'module:vant-weapp/dist/tabs/index',
+    'van-badge': 'module:vant-weapp/dist/badge/index',
+    'van-popup': 'module:vant-weapp/dist/popup/index',
+  },
+  navigationBarTitleText: 'vant-weapp demo',
+}
+</config>
+
+<style lang="less">
+</style>

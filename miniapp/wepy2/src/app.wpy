@@ -56,7 +56,9 @@ wepy.app({
 <config>
 {
     pages: [
-      'pages/index'
+      'pages/index',
+      // 'pages/iview-weapp',
+      'pages/vant-weapp',
     ],
     window: {
       backgroundTextStyle: 'light',

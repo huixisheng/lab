@@ -57,10 +57,16 @@ module.exports.getTime = getTime;
 </wxs>
 <template>
   <div class="container">
+
+
+
     <div class="userinfo" @tap="handleViewTap">
       <image class="userinfo-avatar" src="{{ userInfo.avatarUrl }}" background-size="cover"/>
       <div class="userinfo-nickname">{{ userInfo.nickName }}</div>
     </div>
+
+    <navigator url="/pages/iview-weapp" hover-class="navigator-hover">iview-weapp</navigator>
+    <navigator url="/pages/vant-weapp" hover-class="navigator-hover">vant-weapp</navigator>
 
     <panel>
       <div class="title" slot="title">测试数据绑定</div>
@@ -161,7 +167,7 @@ module.exports.getTime = getTime;
       }
     },
 
- 
+
 
     mixins: [testMixin],
 
@@ -280,7 +286,7 @@ module.exports.getTime = getTime;
 
     created () {
       let self = this
-      self.currentTime = +new Date(); 
+      self.currentTime = +new Date();
 
       self.setTimeoutTitle = '标题三秒后会被修改';
       setTimeout(() => {
