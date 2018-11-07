@@ -1,0 +1,36 @@
+{
+  "name": "wepy2-demo",
+  "version": "0.0.2",
+  "description": "wepy2 demo lab",
+  "main": "weapp/app.js",
+  "scripts": {
+    "dev": "wepy-dev build --watch",
+    "build": "cross-env NODE_ENV=production wepy build --no-cache",
+    "dev:web": "wepy build --output web",
+    "clean": "find ./dist -maxdepth 1 -not -name 'project.config.json' -not -name 'dist' | xargs rm -rf",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "wepy": {
+    "module-a": false,
+    "./src/components/list": "./src/components/wepy-list.wpy"
+  },
+  "author": "huixisheng <469184346@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@wepy/core": "/Users/huixisheng/WorkspacesContribution/wepy/packages/core",
+    "wepy": "^1.6.0",
+    "wepy-async-function": "^1.4.4",
+    "miniprogram-slide-view": "0.0.3",
+    "wepy-com-toast": "^1.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@wepy/babel-plugin-import-regenerator": "/Users/huixisheng/WorkspacesContribution/wepy/packages/babel-plugin-import-regenerator",
+    "babel-eslint": "^7.2.1",
+    "cross-env": "^5.1.3",
+    "less": "^3.8.1",
+    "@wepy/compiler-babel": "^2.0.1",
+    "@wepy/compiler-less": "^2.0.0"
+  }
+}
