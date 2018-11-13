@@ -29,10 +29,10 @@
     "@babel/core": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
     "@wepy/babel-plugin-import-regenerator": "/Users/huixisheng/WorkspacesContribution/wepy/packages/babel-plugin-import-regenerator",
+    "@wepy/compiler-babel": "^2.0.1",
+    "@wepy/compiler-less": "/Users/huixisheng/WorkspacesContribution/wepy/packages/compiler-less",
     "babel-eslint": "^7.2.1",
     "cross-env": "^5.1.3",
-    "less": "^3.8.1",
-    "@wepy/compiler-babel": "^2.0.1",
-    "@wepy/compiler-less": "^2.0.0"
+    "less": "^3.8.1"
   }
 }

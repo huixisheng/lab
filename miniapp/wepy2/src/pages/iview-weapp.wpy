@@ -1,11 +1,15 @@
 <template>
 <view>
   <iButton type="primary">iview-weapp 按钮</iButton>
-  <i-tabs current="{{ current }}" bindchange="handleChange">
+  <i-tabs current="{{ tabCurrent }}" bindchange="handleChange">
     <i-tab key="tab1" title="选项1"></i-tab>
     <i-tab key="tab2" title="选项2"></i-tab>
     <i-tab key="tab3" title="选项3"></i-tab>
   </i-tabs>
+  <i-checkbox-group current="{{current}}" bindchange="handleFruitChange">
+    <i-checkbox wx:for="{{fruit}}" position="{{position}}" wx:key="{{item.id}}" value="{{item.name}}">
+    </i-checkbox>
+  </i-checkbox-group>
 </view>
 </template>
 
@@ -15,11 +19,28 @@ import wepy from '@wepy/core';
 wepy.page ({
 
   computed: {
-
   },
 
   data: {
-    current: 1,
+    tabCurrent: 1,
+    fruit: [{
+        id: 1,
+        name: '香蕉',
+    }, {
+        id: 2,
+        name: '苹果'
+    }, {
+        id: 3,
+        name: '西瓜'
+    }, {
+        id: 4,
+        name: '葡萄',
+    }],
+    current: ['苹果', '葡萄'],
+    position: 'left',
+    animal: '熊猫',
+    checked: false,
+    disabled: false,
   },
 
   onShow() {
@@ -36,6 +57,11 @@ wepy.page ({
         title: 'tab change',
       });
     },
+    handleFruitChange() {
+      wx.showToast({
+        title: 'handleFruitChange',
+      });
+    },
   },
 });
 </script>
@@ -44,8 +70,11 @@ wepy.page ({
 {
   usingComponents: {
     iButton: 'module:iview-weapp/dist/button/index',
-    "i-tabs": "module:iview-weapp/dist/tabs/index",
-    "i-tab": "module:iview-weapp/dist/tab/index"
+    // Component is not found in path "$vendor/iview-weapp/dist/badge/index" (using by "$vendor/iview-weapp/dist/tab/index")
+    // "i-tabs": "module:iview-weapp/dist/tabs/index",
+    // "i-tab": "module:iview-weapp/dist/tab/index",
+    'i-checkbox': 'module:iview-weapp/dist/checkbox/index',
+    'i-checkbox-group': 'module:iview-weapp/dist/checkbox-group/index'
   },
   navigationBarTitleText: 'vant-weapp demo',
 }
