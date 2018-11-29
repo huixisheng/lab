@@ -1,15 +1,12 @@
 <template>
 <view>
-  <iButton type="primary">iview-weapp 按钮</iButton>
-  <i-tabs current="{{ tabCurrent }}" bindchange="handleChange">
-    <i-tab key="tab1" title="选项1"></i-tab>
-    <i-tab key="tab2" title="选项2"></i-tab>
-    <i-tab key="tab3" title="选项3"></i-tab>
-  </i-tabs>
-  <i-checkbox-group current="{{current}}" bindchange="handleFruitChange">
-    <i-checkbox wx:for="{{fruit}}" position="{{position}}" wx:key="{{item.id}}" value="{{item.name}}">
-    </i-checkbox>
-  </i-checkbox-group>
+  <!-- <view @tap="handleChange">11</view> -->
+  <view>
+    <i-checkbox-group current="{{current}}" bindchange="handleFruitChange">
+      <i-checkbox wx:for="{{fruit}}" position="{{position}}" wx:key="{{item.id}}" value="{{item.name}}">
+      </i-checkbox>
+    </i-checkbox-group>
+  </view>
 </view>
 </template>
 
@@ -69,10 +66,6 @@ wepy.page ({
 <config>
 {
   usingComponents: {
-    iButton: 'module:iview-weapp/dist/button/index',
-    // Component is not found in path "$vendor/iview-weapp/dist/badge/index" (using by "$vendor/iview-weapp/dist/tab/index")
-    // "i-tabs": "module:iview-weapp/dist/tabs/index",
-    // "i-tab": "module:iview-weapp/dist/tab/index",
     'i-checkbox': 'module:iview-weapp/dist/checkbox/index',
     'i-checkbox-group': 'module:iview-weapp/dist/checkbox-group/index'
   },

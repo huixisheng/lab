@@ -56,8 +56,9 @@ wepy.app({
 <config>
 {
     pages: [
-      'pages/iview-weapp',
-      'pages/index',
+      'pages/iview-weapp-bind-event',
+      // 'pages/iview-weapp',
+      // 'pages/index',
       // 'pages/vant-weapp',
     ],
     window: {
