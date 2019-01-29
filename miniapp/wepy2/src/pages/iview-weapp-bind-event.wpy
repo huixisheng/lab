@@ -1,5 +1,6 @@
 <template>
 <view>
+  <!-- 经过多次测试得出如下结论: 首次编译是正常，后面多次保存如下代码就有问题。 https://github.com/Tencent/wepy/commit/fdfdbd390a81aab3b38758096d89f74405c3c10e -->
   <!-- <view @tap="handleChange">11</view> -->
   <view>
     <i-checkbox-group current="{{current}}" bindchange="handleFruitChange">
