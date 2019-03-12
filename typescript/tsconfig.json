@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "outDir": "./demos/dist/",
+        "allowJs": false,
+        "rootDir": "./demos/src/",
+        "target": "es5"
+    },
+    "compileOnSave": true,
+    "include": [
+        "./demos/src/*.ts"
+    ],
+    "exclude": []
+}
