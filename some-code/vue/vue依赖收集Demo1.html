@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue依赖收集Demo</title>
+</head>
+<body>
+<script>
+let people = {
+  age: 30,
+};
+Object.defineProperty(people, 'age', {
+  get() {
+    // 传入this对象（由于继承关系，这里的this并不一定是定义该属性的对象） ?
+    console.log('people.age 被读取');
+    // 死循环
+    // return this.age;
+    return 30;
+  },
+  set(newValue) {
+    console.log('people.age 被设置新值', newValue);
+    // this.age = 30;
+  }
+});
+console.clear();
+console.log(people.age);
+people.age = 31;
+
+</script>   
+</body>
+</html>

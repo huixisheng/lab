@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>通过 debugger 学习 Vue 的 diff 算法</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="lib/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <div>
+      <h1>h1</h1>
+      <ul>
+        <li v-for="item in list" v-text="item.name"></li>
+      </ul>
+      <div>
+        <h2 v-if="visibleH2">h2</h2>
+        <p>p</p>
+        <button @click="handleChangeDom">改变Dom</button>
+      </div>
+    </div>
+  </div>  
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        visibleH2: true,
+        h2name: 'h2',
+        list: [{
+          name: 'li1',
+        }, {
+          name: 'li2',
+        }, {
+          name: 'li3',
+        }],
+      },
+      methods: {
+        handleChangeDom() {
+          this.visibleH2 = !this.visibleH2;
+          this.list.push({name: 'li4'});
+        },
+      },
+    });
+  </script>  
+</body>
+</html>
