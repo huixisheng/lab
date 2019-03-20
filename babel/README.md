@@ -1,3 +1,9 @@
+babel 相关的使用说明
+---
+
+- babel-base es6 一些语法转换
+- transform-runtime 测试
+
 ## 参考 ##
 - [你真的会用 Babel 吗?](https://segmentfault.com/a/1190000011155061#articleHeader9) https://github.com/sunyongjian/blog/issues/30
 - [babel-preset-env升级迁移完全指北](http://blog.5udou.cn/blog/babel-preset-envSheng-Ji-Qian-Yi-Wan-Quan-Zhi-Bei-70)
