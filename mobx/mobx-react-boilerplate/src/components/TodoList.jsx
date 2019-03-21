@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { observable, action } from "mobx";
 import { observer } from "mobx-react";
 
@@ -31,7 +31,7 @@ class TodoList extends React.Component {
     );
   }
 
-  @action
+  @action('customActionName')
   handleInputChange = e => {
     this.newTodoTitle = e.target.value;
   };
