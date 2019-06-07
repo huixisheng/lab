@@ -42,6 +42,20 @@ Experimental support for decorators is a feature that is subject to change in a 
 
 - [Error warning message: "Experimental support for decorators is a feature that is subject to change in a future release" · Issue #45071 · Microsoft/vscode](https://git.io/fjf6a)
 
+
+`mobx-react-devtools` 作用
+
+> 用来追踪应用的渲染行为和数据依赖关系
+- [mobxjs/mobx-react-devtools: Tools to perform runtime analyses of React applications powered by MobX and React](https://github.com/mobxjs/mobx-react-devtools)
+
+
+
+npx 命令作用
+> 也就是说 npx 会自动查找当前依赖包中的可执行文件，如果找不到，就会去 PATH 里找。如果依然找不到，就会帮你安装！ [npx 是什么 - 知乎](https://zhuanlan.zhihu.com/p/27840803)
+
+- [npx 使用教程 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2019/02/npx.html)
+- [awesome npx - 掘金](https://juejin.im/post/5a9f5c43f265da238155293e)
+
 ## TODO
 [我眼中的 JavaScript 函数式编程 | Taobao FED | 淘宝前端团队](http://taobaofed.org/blog/2017/03/16/javascript-functional-programing/)
 [征服 JavaScript 面试: 什么是函数式编程？| Eric Elliott - 众成翻译](https://www.zcfy.cc/article/master-the-javascript-interview-what-is-functional-programming-2221.html)
@@ -52,14 +66,17 @@ mbox observable
 store 的变化驱动响应 UI 
 有点像 Vue
 
+## 文档
+- [Hello World - React](https://react.docschina.org/docs/hello-world.html)
+- [2. API概览 · MobX 中文文档](https://cn.mobx.js.org/refguide/api.html)
+- [MobX: Ten minute introduction to MobX and React](https://mobx.js.org/getting-started.html)
 
 ## 教程
 - [mobxjs/mobx-react-boilerplate: Small project to quickly start with React, MobX, JSX, ES6, Babel](https://github.com/mobxjs/mobx-react-boilerplate)
 - [JavaScript 全栈工程师培训教程 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2016/11/javascript.html)
+- https://github.com/mobxjs/mobx-react-typescript-boilerplate
 
 ## 其他
-- [2. API概览 · MobX 中文文档](https://cn.mobx.js.org/refguide/api.html)
-- [MobX: Ten minute introduction to MobX and React](https://mobx.js.org/getting-started.html)
 - [mobxjs/awesome-mobx: A collection of awesome things regarding MobX.](https://github.com/mobxjs/awesome-mobx/)
 - [Mobx + React simple todolist - JSFiddle](https://jsfiddle.net/mweststrate/wv3yopo0/)
 - [new - CodeSandbox](https://codesandbox.io/s/new)
@@ -83,3 +100,5 @@ store 的变化驱动响应 UI
 - [如何评价数据流管理框架 MobX ? - 知乎](https://www.zhihu.com/question/52219898)
 - [解读Mobx及与redux的对比 - 知乎](https://zhuanlan.zhihu.com/p/36294638)
 - [我为什么从Redux迁移到了Mobx](https://tech.youzan.com/mobx_vs_redux/)
+- [Becoming fully reactive: an in-depth explanation of MobX](https://hackernoon.com/becoming-fully-reactive-an-in-depth-explanation-of-mobservable-55995262a254)
+- [Redux、MobX 数据流的总结 · Issue #32 · riskers/blog](https://git.io/fjf6P)
