@@ -1,0 +1,26 @@
+{
+  "name": "library-test",
+  "version": "0.0.1",
+  "description": "测试",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "authors": {
+    "name": "",
+    "email": ""
+  },
+  "repository": "/library-test",
+  "scripts": {
+    "dev": "umi-lib doc dev",
+    "build": "umi-lib build"
+  },
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "devDependencies": {
+    
+    "umi-library": "^1.1.1",
+    "typescript": "^3.3.3"
+    
+    },
+  "license": "MIT"
+}
