@@ -39,11 +39,9 @@ Page({
   },
   // Event handler.
   viewTap: function() {
-    this.setData({
-      text: 'Set some data for updating view.'
-    }, function() {
-      // this is setData callback
-    })
+    wx.navigateTo({
+      url: '/pages/test/index11'
+    }) // 如果是 tabbar 页面，请使用 wx.switchTab
   },
   customData: {
     hi: 'MINA'
