@@ -1,0 +1,50 @@
+{
+    "pageNum": 1,
+    "pageSize": 20,
+    "size": 4,
+    "orderBy": null,
+    "startRow": 1,
+    "endRow": 4,
+    "total": 4,
+    "pages": 1,
+    "list": [
+        {
+            "id": 1345,
+            "accountId": 1236333,
+            "mobile": "123456789010",
+            "gender": 0,
+            "country": "",
+            "province": "",
+            "city": "",
+            "nickName": "悔惜晟",
+            "inviteNum": 0,
+            "attention": 0,
+            "inboundInstanceNum": 10,
+            "inboundInstanceAvg": 0.3571,
+            "lastInboundTime": "2019-07-21 20:13:17",
+            "returnVisitStatus": 0,
+            "returnVisitTime": null,
+            "gmtCreate": "2019-07-05 11:59:52",
+            "gmtModified": "2019-07-30 19:46:37"
+        },
+        {
+            "id": 1346,
+            "accountId": 1236354,
+            "mobile": "123456789011",
+            "gender": 1,
+            "country": "中国",
+            "province": "浙江",
+            "city": "杭州",
+            "nickName": "huixisheng",
+            "inviteNum": 0,
+            "attention": 0,
+            "inboundInstanceNum": 8,
+            "inboundInstanceAvg": 0.2857,
+            "lastInboundTime": "2019-07-08 11:37:36",
+            "returnVisitStatus": 0,
+            "returnVisitTime": null,
+            "gmtCreate": "2019-07-05 22:55:52",
+            "gmtModified": "2019-07-22 10:18:07"
+        }
+    ]
+}
