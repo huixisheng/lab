@@ -59,4 +59,4 @@ typings/
 package-lock.json
 yarn.lock
 tmp
-
+miniapp/swan
