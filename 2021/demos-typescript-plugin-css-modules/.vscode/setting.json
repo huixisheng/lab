@@ -1,0 +1,5 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "ts-file-skip.fileSuffix": ["css", "less", "sass", "scss", "styl", "lless"]
+}
